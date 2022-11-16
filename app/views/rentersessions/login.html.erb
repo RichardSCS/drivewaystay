@@ -1,0 +1,9 @@
+<div>
+  <h2>Log In for Renters</h2>
+  <%= form_tag '/renter/login' do %>
+    Username: <%= text_field_tag :username %><br>
+    Password: <%= password_field_tag :password %><br>
+    <%= submit_tag "Log In" %>
+  <% end %>
+  <%= link_to 'New Renter? Register here', new_renter_path, :class => 'btn btn-primary col-2' %>
+</div>

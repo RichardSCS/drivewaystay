@@ -1,0 +1,9 @@
+<div>
+  <h2>Log In for Owners</h2>
+  <%= form_tag '/owner/login' do %>
+    Username: <%= text_field_tag :username %><br>
+    Password: <%= password_field_tag :password %><br>
+    <%= submit_tag "Log In" %>
+  <% end %>
+  <%= link_to 'New Owner? Register here', new_owner_path, :class => 'btn btn-primary col-2' %>
+</div>
